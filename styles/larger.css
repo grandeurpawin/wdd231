@@ -11,7 +11,8 @@
     }
     .navigation {
         display: block;
-        background-color: var(--primary-color);
+        background-color: #3B2F2F;
+        color: #F5EFE6;
     }
     .navigation ul {
         display: flex;
@@ -21,7 +22,7 @@
         border: none;
     }
     .navigation a:hover {
-       box-shadow: inset 0 0 0 2px var(--primary-color);   
+       box-shadow: inset 0 0 0 2px #3B2F2F;   
     }
     h1 {
         display: flex;

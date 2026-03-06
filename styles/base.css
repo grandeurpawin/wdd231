@@ -59,6 +59,7 @@ header span {
 .navigation.show  {
     display: block;
     background-color: var(--primary-color);
+    color: var(--background-color);
 }
 .navigation ul {
     list-style-type: none;
@@ -77,6 +78,7 @@ header span {
 }
 .navigation li.homePage {
     background-color: #2B2222;
+    color: var(--background-color);
 }
 a:hover,
 a:active,
