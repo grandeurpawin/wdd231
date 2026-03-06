@@ -1,0 +1,218 @@
+:root {
+    --background-color: #F5EFE6;
+    --primary-color: #3B2F2F;
+    --secondary-color: #fff;
+    --heading-font: 'PT Serif', serif;
+    --body-font: 'Lora', serif;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--body-font);
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+/* ----------Header---------- */
+header {
+    display: grid;
+    grid-template-columns: 30px auto 44px;
+    column-gap: 10px;
+    padding: 8px 12px;
+    align-items: center;
+}
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: .8rem;
+}
+header span {
+    font-family: var(--heading-font);
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+/* ----------Hamburger Button---------- */
+#hamButton {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-style: normal;
+}
+#hamButton::before {
+    content: "\2630";
+}
+#hamButton.show::before {
+    content: "\2716";
+}
+
+/* ----------Navigation---------- */
+.navigation {
+    display: none;
+}
+.navigation.show  {
+    display: block;
+    background-color: var(--primary-color);
+}
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navigation a {
+    display: block;
+    font-family: var(--heading-font);
+    font-size: 1.6rem;
+    font-style: italic;
+    padding: .8rem 12px;
+    color: var(--background-color);
+    text-decoration: none;
+    border-bottom: solid 1px var(--background-color);
+}
+.navigation li.homePage {
+    background-color: #2B2222;
+}
+a:hover,
+a:active,
+button:hover,
+button:active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transform: translateY(-1px);
+}
+
+/* ----------Main---------- */
+h1, h2 {
+    font-family: var(--heading-font);
+    font-style: italic;
+}
+h1 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-left: 10px;
+    margin-top: 0;
+}
+h2{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-size: 1.6rem;
+    padding: .8rem;
+    text-align: center;
+    border-radius: 6px 6px 0 0;
+    margin-top: 0;
+}
+
+/* ----------Section Container---------- */
+.sectionContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 10px;
+    text-align: center;
+}
+.gridSection {
+    background-color: var(--secondary-color);
+    border: #ddd 1px solid;
+    margin-bottom: 1rem;
+}
+.gridSection img {
+    margin: 0 1rem 1rem 1rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(59, 47, 47, 0.6);
+}
+#section1 p {
+    padding: 1rem;
+    margin: 1rem;
+}
+button {
+    font-family: var(--heading-font);
+    font-size: 1.4rem;
+    font-style: italic;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 1rem;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+}
+button:hover {
+    border: var(--primary-color) 1px solid;
+}
+#courseContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 1rem;
+    justify-content: center;
+}
+.courseCard {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ddd;
+    background: var(--secondary-color);
+    border-radius: 6px;
+    width: 200px;
+    height: 59px;
+    color: var(--primary-color);
+    align-items: center;
+}
+.completed {
+    background: var(--background-color);
+    border: 2px solid var(--primary-color);
+}
+.completed h3::before {
+    content: "✔ ";
+    color: var(--primary-color);
+    margin-right: 6px;
+}
+
+/* ----------Footer---------- */
+footer {
+    font-family: var(--heading-font);
+    font-size: 1.4rem;
+    font-style: italic;
+    padding: .5rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+footer p {
+    margin: 0;
+    padding: .2rem;
+}
+footer p:nth-last-of-type(1) {
+    font-size: 1.2rem;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--background-color);
+    border:  var(--primary-color) 1px solid;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+.social img {
+    width: 30px;
+    height:30px;
+}
+.social a:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    transform: none;
+}

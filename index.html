@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page</title>
+    <meta name="description" content="Development of course home page by applying prerequisite knowledge of HTML, CSS, and Javascript.">
+    <meta name="author" content="Grandeur Pawin">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/base.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/mountains.svg" alt="Logo for the course page" width="512" height="512">
+        <span>Grandeur Pawin</span>
+        <button id="hamButton" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="navBar" class="navigation">
+        <ul>
+            <li class="homePage"><a href="index.html">Home</a></li>
+            <li><a href="#chamber">Chamber Project</a></li>
+            <li><a href="#final">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="sectionContainer">
+            <section id="section1" class="gridSection">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil harum quos voluptatibus adipisci similique, beatae excepturi, recusandae dolorum eius possimus placeat sit corrupti sed, ex repudiandae veritatis doloremque? Eum, dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sit sequi inventore saepe! Maxime temporibus magni reiciendis nesciunt tempora vero doloribus repudiandae explicabo assumenda, laudantium maiores. Minima dignissimos quas nobis?</p>
+            </section>
+            <section id="section2" class="gridSection">
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="Grandeur Pawin's photo">
+            </section>
+            <section id="section3" class="gridSection">
+                <h2>Web Certificate Courses</h2>
+                <div class="courseButtons">
+                    <button data-subject="allCourses">All Courses</button>
+                    <button data-subject="WDD">WDD Courses</button>
+                    <button data-subject="CSE">CSE Courses</button>
+                </div>
+                <p>The total number of course listed below is <span id="totalCredits"></span>.</p>
+                <div id="courseContainer"></div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/grandeurpawin/wdd231" target="_blank"><img src="images/github.svg" alt="Github" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/grandeur-pawin-b13136388/" target="_blank"><img src="images/linkedin.svg" alt="Linked In" width="16" height="16"></a>
+            <a href="https://www.facebook.com/grandeur.pawin" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+            <a href="https://x.com/i/flow/login" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16" height="16"></a>
+        </div>
+        <p><span id="currentYear"></span> &#9679; Grandeur Pawin &#9679; Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
