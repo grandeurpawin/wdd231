@@ -81,8 +81,8 @@ header span {
 }
 .navigation a:hover,
 .navigation a:active,
-button:hover,
-button:active {
+.courseButtons button:hover,
+.courseButtons button:active {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     transition: background-color 0.3s ease, color 0.3s ease;
