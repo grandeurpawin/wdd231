@@ -1,3 +1,4 @@
+
 @media screen and (min-width: 600px) {
     header,nav,main,footer {
         max-width: 1200px;
@@ -11,18 +12,15 @@
     }
     .navigation {
         display: block;
-        background-color: #3B2F2F;
-        color: #F5EFE6;
     }
     .navigation ul {
         display: flex;
-        list-style-type: none;
     }
     .navigation a {
         border: none;
     }
     .navigation a:hover {
-       box-shadow: inset 0 0 0 2px #3B2F2F;   
+       box-shadow: inset 0 0 0 2px var(--primary-color);   
     }
     h1 {
         display: flex;
@@ -30,15 +28,11 @@
         margin-top: 1rem;
     }
     .sectionContainer {
-        display: grid;
         grid-template-columns: 4fr 2fr;
         grid-template-areas: 
         "section1 section2"
         "section3 section3";
         column-gap: 1rem;
-    }
-    section {
-        margin-top: 0;
     }
     #section1 {
         grid-area: section1;

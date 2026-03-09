@@ -43,7 +43,6 @@ header span {
     font-size: 2rem;
     color: var(--primary-color);
     cursor: pointer;
-    font-style: normal;
 }
 #hamButton::before {
     content: "\2630";
@@ -55,11 +54,11 @@ header span {
 /* ----------Navigation---------- */
 .navigation {
     display: none;
-}
-.navigation.show  {
-    display: block;
     background-color: var(--primary-color);
     color: var(--background-color);
+}
+.navigation.show {
+    display: block;
 }
 .navigation ul {
     list-style-type: none;
@@ -80,8 +79,8 @@ header span {
     background-color: #2B2222;
     color: var(--background-color);
 }
-a:hover,
-a:active,
+.navigation a:hover,
+.navigation a:active,
 button:hover,
 button:active {
     background-color: var(--secondary-color);
@@ -91,7 +90,7 @@ button:active {
 }
 
 /* ----------Main---------- */
-h1, h2 {
+h1, h2, .courseButtons button, footer {
     font-family: var(--heading-font);
     font-style: italic;
 }
@@ -101,7 +100,7 @@ h1 {
     margin-left: 10px;
     margin-top: 0;
 }
-h2{
+h2 {
     background-color: var(--primary-color);
     color: var(--background-color);
     font-size: 1.6rem;
@@ -132,10 +131,8 @@ h2{
     padding: 1rem;
     margin: 1rem;
 }
-button {
-    font-family: var(--heading-font);
+.courseButtons button {
     font-size: 1.4rem;
-    font-style: italic;
     background-color: var(--primary-color);
     color: var(--background-color);
     padding: 1rem;
@@ -177,9 +174,7 @@ button:hover {
 
 /* ----------Footer---------- */
 footer {
-    font-family: var(--heading-font);
     font-size: 1.4rem;
-    font-style: italic;
     padding: .5rem;
     text-align: center;
     background-color: var(--primary-color);
@@ -204,17 +199,14 @@ footer p:nth-last-of-type(1) {
     justify-content: center;
     align-items: center;
     color: var(--background-color);
-    border:  var(--primary-color) 1px solid;
+    border:  var(--background-color) 1px solid;
+    padding: .3rem;
     border-radius: 50%;
     width: 44px;
     height: 44px;
+    cursor: pointer;
 }
 .social img {
     width: 30px;
     height:30px;
-}
-.social a:hover {
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    transform: none;
 }
