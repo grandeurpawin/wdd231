@@ -34,7 +34,7 @@ const displayCompanies = (companies) => {
         let card = document.createElement("section");
         card.classList.add("courseCard");
         let portrait = document.createElement("img");
-        let company_name = document.createElement("h3");
+        let company_name = document.createElement("h2");
         let tagline = document.createElement("span")
         let company_address = document.createElement("p");
         let company_phone = document.createElement("p");

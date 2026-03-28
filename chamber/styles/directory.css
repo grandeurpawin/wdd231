@@ -88,6 +88,13 @@ main {
     padding: 2rem 1rem;
     margin: 1rem;
     border-radius: 10px;
+ h1, h2 {
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    font-style: italic;
+}
+h2 {
+    font-size: 1.6rem;
 }
 .buttons {
     text-align: center;
@@ -124,7 +131,7 @@ main {
 }
 #cards.list .courseCard {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
     align-items: center;
     width: 100%;
     min-height: 70px;
@@ -145,7 +152,7 @@ main {
     display: none;
 }
 
-#cards.list .courseCard h3,
+#cards.list .courseCard h2,
 #cards.list .courseCard p,
 #cards.list .courseCard a {
     margin: 0;
