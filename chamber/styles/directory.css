@@ -88,6 +88,8 @@ main {
     padding: 2rem 1rem;
     margin: 1rem;
     border-radius: 10px;
+}
+
  h1, h2 {
     font-family: var(--heading-font);
     font-size: 1.8rem;
@@ -96,15 +98,16 @@ main {
 h2 {
     font-size: 1.6rem;
 }
-.buttons {
-    text-align: center;
-    padding: 1rem;;
-}
 
+.buttons #grid, .buttons #list{
+    text-align: center;
+    color: var(--background-color);
+}
 .buttons {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 #grid, #list {
@@ -131,7 +134,7 @@ h2 {
 }
 #cards.list .courseCard {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
     width: 100%;
     min-height: 70px;
@@ -215,13 +218,16 @@ h2 {
 .courseCard a {
     margin-top: 0.5rem;
     font-size: 0.9rem;
-    color: navyblue;
+    color: rgb(18, 18, 71);
     word-break: break-word;
 }
 
 /* ----------Footer---------- */
 footer {
     background-color: var(--background-color);
+}
+footer a {
+    color: var(--primary-color);
 }
 .footer {
     padding: 1rem;
