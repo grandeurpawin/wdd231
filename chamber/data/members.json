@@ -1,0 +1,81 @@
+{
+    "companies": [
+        {
+            "company_name": "Island Horizons Travel",
+            "company_address": "101 Beachfront Ave, Honolulu, HI 96815",
+            "company_phone": "+1-808-555-1122",
+            "company_website": "https://www.islandhorizons.com",
+            "image_file": "images/island_horizons.svg",
+            "membership_level": 3,
+            "other_info": {
+                "description": "Sustainable journeys across Hawaii horizons."
+            }
+        },
+        {
+            "company_name": "Mountain Spirit Adventures",
+            "company_address": "250 Summit Road, Denver, CO 80202",
+            "company_phone": "+1-303-555-2233",
+            "company_website": "https://www.mountainspiritadventures.com",
+            "image_file": "images/mountain_spirit.svg",
+            "membership_level": 2,
+            "other_info": {
+                "description": "Adventure with purpose, guided by nature."
+            }
+        },
+        {
+            "company_name": "Riverbend Kayak Tours",
+            "company_address": "88 Riverside Lane, Asheville, NC 28801",
+            "company_phone": "+1-828-555-3344",
+            "company_website": "https://www.riverbendkayak.com",
+            "image_file": "images/riverbend_kayak.svg",
+            "membership_level": 1,
+            "other_info": {
+                "description": "Flow with the river, paddle with ease."
+            }
+        },
+        {
+            "company_name": "Safari Plains Expeditions",
+            "company_address": "12 Savannah Drive, Orlando, FL 32819",
+            "company_phone": "+1-407-555-4455",
+            "company_website": "https://www.safariplains.com",
+            "image_file": "images/safari_plains.svg",
+            "membership_level": 3,
+            "other_info": {
+                "description": "Experience the wild, conserve the future."
+            }
+        },
+        {
+            "company_name": "Evergreen Eco Lodges",
+            "company_address": "77 Forest Trail, Seattle, WA 98101",
+            "company_phone": "+1-206-555-5566",
+            "company_website": "https://www.evergreenlodges.com",
+            "image_file": "images/evergreen_eco.svg",
+            "membership_level": 2,
+            "other_info": {
+                "description": "Eco-friendly stays in nature’s embrace."
+            }
+        },
+        {
+            "company_name": "Coastal Breeze Cruises",
+            "company_address": "300 Marina Blvd, San Diego, CA 92101",
+            "company_phone": "+1-619-555-6677",
+            "company_website": "https://www.coastalbreezecruises.com",
+            "image_file": "images/coastal_breeze.svg",
+            "membership_level": 1,
+            "other_info": {
+                "description": "Cruise the coast, cherish the ocean."
+            }
+        },
+        {
+            "company_name": "Desert Bloom Tours",
+            "company_address": "55 Canyon Road, Phoenix, AZ 85004",
+            "company_phone": "+1-602-555-7788",
+            "company_website": "https://www.desertbloomtours.com",
+            "image_file": "images/desert_bloom.svg",
+            "membership_level": 3,
+            "other_info": {
+                "description": "Discover the desert’s hidden beauty."
+            }
+        }
+    ]
+}

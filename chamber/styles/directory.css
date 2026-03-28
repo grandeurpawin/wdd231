@@ -26,7 +26,6 @@ header {
     padding: 8px 12px;
     align-items: center;
     background-color: var(--background-color);
-    max-width: 2000px;
 }
 header span {
     font-family: var(--heading-font);
@@ -50,12 +49,13 @@ header img {
     display: none;
 }
 nav a {
+    display: block;
     font-family: var(--heading-font);
     font-size: 1.6rem;
     font-style: italic;
     text-decoration: none;
     color: var(--primary-color);
-    padding: 0 1rem 0 1rem;
+    padding: 1rem;
 }
 nav a:hover, nav a:active {
     background-color: var(--primary-color);
@@ -63,7 +63,7 @@ nav a:hover, nav a:active {
     transition:background-color 0.3s ease, color 0.3s ease;
 }
 .show li {
-    display: block;
+    display: flex;
 }
 
 /* ----------Hamburger Button---------- */
@@ -82,22 +82,146 @@ nav a:hover, nav a:active {
     content: "\2716";
 }
 
-@media screen and (min-width: 600px) {
-    header {
-        display: grid;
-        grid-template-columns: 44px auto 1fr;
-    }
-    header span {
-        text-align: left;
-    }
-    .hamburger {
-        display: none;
-    }
-    .navigation li {
-        display: block;
-    }
-    .navigation {
-        display: flex;
-        justify-content: flex-end;
-    }
+/* ----------Main---------- */
+main {
+    background-color: var(--background-color);
+    padding: 2rem 1rem;
+    margin: 1rem;
+    border-radius: 10px;
 }
+.buttons {
+    text-align: center;
+    padding: 1rem;
+}
+
+#grid, #list {
+    text-align: center;
+   background: none;
+   border: none;
+}
+
+#grid,
+#list {
+    border: 1px solid var(--primary-color);
+    border-radius: 3px;
+}
+
+/* List button format */
+#cards.list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0;
+}
+#cards.list .courseCard:hover {
+    transform: none;
+}
+#cards.list .courseCard {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    width: 100%;
+    min-height: 70px;
+    padding: 0 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    text-align: left;
+    overflow: hidden;
+}
+
+#cards.list .courseCard:nth-child(even) {
+    background-color: var(--background-color);
+}
+
+#cards.list .courseCard img,
+#cards.list .courseCard span {
+    display: none;
+}
+
+#cards.list .courseCard h3,
+#cards.list .courseCard p,
+#cards.list .courseCard a {
+    margin: 0;
+    padding: 0 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#cards.list .courseCard a {
+    color: var(--primary-color);
+}
+
+/* Cards */
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+.courseCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    min-height: 400px;
+    padding: 1.5rem;
+    background-color: #fff;
+    color: var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.courseCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+.courseCard img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+.courseCard h3 {
+    font-family: var(--heading-font);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+.courseCard span {
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 0.8rem;
+}
+.courseCard p {
+    font-size: 0.9rem;
+    margin: 0.2rem 0;
+}
+.courseCard a {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: navyblue;
+    word-break: break-word;
+}
+
+/* ----------Footer---------- */
+footer {
+    background-color: var(--background-color);
+}
+.footer {
+    padding: 1rem;
+    margin: 1rem;
+}
+#socialLinks {
+    text-align: center;
+}
+#socialLinks img {
+    width: auto;
+    height: auto;
+    background-color: var(--secondary-color);
+    padding: .5rem;
+    border-radius: 50%;
+}
+

@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
     <script src="scripts/directory.js" defer></script>
 </head>
 <body>
@@ -32,7 +33,54 @@
             </ul>
         </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <div class="buttons">
+            <button id="grid" aria-label="Grid View">
+                <svg viewBox="0 0 25 25" width="40" height="30" fill="#3B2F2F">
+                    <rect x="4" y="6" width="4" height="4" />
+                    <rect x="10" y="6" width="4" height="4" />
+                    <rect x="16" y="6" width="4" height="4" />
+                
+                    <rect x="4" y="12" width="4" height="4" />
+                    <rect x="10" y="12" width="4" height="4" />
+                    <rect x="16" y="12" width="4" height="4" />
+                
+                    <rect x="4" y="18" width="4" height="4" />
+                    <rect x="10" y="18" width="4" height="4" />
+                    <rect x="16" y="18" width="4" height="4" />
+                </svg>
+            </button>
+            <button id="list" aria-label="List View">
+                <svg viewBox="0 0 24 24" width="40" height="30" fill="#3B2F2F">
+                    <rect x="2" y="6" width="3" height="3" />
+                    <rect x="2" y="12" width="3" height="3" />
+                    <rect x="2" y="18" width="3" height="3" />
+
+                    <rect x="8" y="6" width="13" height="3" />
+                    <rect x="8" y="12" width="13" height="3" />
+                    <rect x="8" y="18" width="13" height="3" />
+                </svg>
+            </button>
+        </div>
+        <div id="cards"></div>
+    </main>
+    <footer>
+        <div class="footerContainer">
+            <div id="websiteInfo" class="footer">
+                <h3>Katipunan Chamber of Commerce</h3>
+                <P>Purok 4, Katipunan, Arakan<br>North Cotabato, Philippines 9417<br>katipunanchamberofcommerce.org<br>+63541623973</P>
+            </div>
+            <div id="socialLinks" class="footer">
+                <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.svg" alt="Grandeur Pawin on Youtube" width="44" height="44"></a>
+                <a href="https://x.com/account/signin" target="_blank"><img src="images/twitter.svg" alt="Grandeur Pawin on X" width="44" height="44"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="Grandeur Pawin on LinkedIn" width="44" height="44"></a>
+            </div>
+            <div id="authorInfo" class="footer">
+                <p>WDD231 Class Project<br>Grandeur Pawin</p>
+                <p>&copy; <span id="currentYear"></span> Katipunan Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
