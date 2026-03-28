@@ -91,7 +91,13 @@ main {
 }
 .buttons {
     text-align: center;
-    padding: 1rem;
+    padding: 1rem;;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
 #grid, #list {
@@ -102,7 +108,7 @@ main {
 
 #grid,
 #list {
-    border: 1px solid var(--primary-color);
+    border: 2px solid var(--primary-color);
     border-radius: 3px;
 }
 
