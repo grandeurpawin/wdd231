@@ -1,0 +1,240 @@
+:root {
+    --background-color: #F5EFE6;
+    --primary-color: #3B2F2F;
+    --secondary-color: #fff;
+    --heading-font: 'PT Serif', serif;
+    --body-font: 'Lora', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "Lora", serif;
+    font-size: 1.2rem;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+/********************Header********************/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: .8rem 0 .8rem 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    background-color: var(--background-color);
+    column-gap: 6px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-family: var(--heading-font);
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--primary-color);
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/********************Navigation********************/
+.navigation {
+    display: none;
+    background-color: var(--primary-color);
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navigation a {
+    display: block;
+    font-family: var(--heading-font);
+    font-size: 1.4rem;
+    font-style: italic;
+    padding: .8rem 10px;
+    color: var(--background-color);
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+    background-color: #2B2222;
+}
+
+.navigation a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: 1.6rem;
+    font-style: italic;
+    margin: 10px;
+}
+
+/********************Main********************/
+.sectionContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.gridSection {
+    text-align: center;
+    margin: 1rem;
+    border: solid 1px #ddd;
+    border-radius: 8px 8px 0 0;
+    background-color: var(--secondary-color);
+}
+
+.gridSection h2 {
+    font-family: var(--heading-font);
+    font-size: 1.4rem;
+    font-style: italic;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: .8rem;
+    border-radius: 6px 6px 0 0;
+}
+
+.gridSection img {
+    margin: 0 1rem 1rem 1rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(59, 47, 47, 0.6);
+}
+
+#section1 p {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#section3 p {
+    margin: .8rem;
+}
+
+.courseButtons button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: .8rem;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.courseButtons button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+    transition: background-color 0.3 ease, color 0.3 ease;
+}
+
+#courseContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin: 1rem;
+    width: 150px;
+    border-radius: 6px;
+    border: solid 1px #ddd;
+    background-color: var(--secondary-color);
+}
+
+.completed h3 {
+    background-color: var(--background-color);
+}
+
+.completed h3:before {
+    content: "✔ ";
+    margin-right: 6px;
+}
+
+/********************Footer********************/
+footer {
+    background-color: var(--primary-color);
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+footer p {
+    font-family: var(--heading-font);
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--background-color);
+    margin: 0;
+    padding-bottom: .5rem;
+    
+}
+
+footer span {
+    color: var(--background-color);
+}
+
+footer p:nth-last-of-type(1) {
+font-size: 1.2rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px var(--background-color);
+    border-radius: 22px;
+    width: 44px;
+    height: 44px;
+    color: var(--background-color);
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #2B2222;
+}

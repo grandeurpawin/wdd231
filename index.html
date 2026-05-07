@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Demonstrate prerequisite knowldege by applying HTML, CSS, and JavaScript to the development of my course home page.">
+    <meta name="author" content="Grandeur Pawin">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Style Sheets Here -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/mountains.svg" alt="Site Logo" width="512" height="512">
+        <span>Grandeur Pawin</span>
+        <button aria-label="Navigation" id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="sectionContainer">
+            <section id="section1" class="gridSection">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ratione quidem maxime quisquam consequatur exercitationem nisi assumenda sequi qui non voluptas molestias adipisci, quae laudantium cupiditate minus ipsum ab. Accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, praesentium consequatur illum sint sapiente distinctio dolorem, similique, provident soluta voluptatum ad minima veniam labore nulla veritatis quidem tempore quia cupiditate?</p>
+            </section>
+            <section id="section2" class="gridSection">
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="Grandeur Pawin's Photo" width="200" height="190">
+            </section>
+            <section id="section3" class="gridSection">
+                <h2>Web Certificate Courses</h2>
+                <div class="courseButtons">
+                    <button data-subject="allCourses">All Courses</button>
+                    <button data-subject="WDD">WDD Courses</button>
+                    <button data-subject="CSE">CSE Courses</button>
+                </div>
+                <p>The total credits for listed above is <span id="totalCredits"></span>.</p>
+                <div id="courseContainer"></div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+            <a href="https://github.com/" target="_blank"><img src="images/github.svg" alt="GitHub" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="X" width="16" height="16"></a>
+        </div>
+        <p><span id="currentYear"></span> &#9679; Grandeur Pawin &#9679; Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
