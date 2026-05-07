@@ -68,6 +68,7 @@ header span {
 .navigation {
     display: none;
     background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .navigation.show {
@@ -92,6 +93,7 @@ header span {
 
 .navigation li.current {
     background-color: #2B2222;
+    color: var(--secondary-color);
 }
 
 .navigation a:hover {
