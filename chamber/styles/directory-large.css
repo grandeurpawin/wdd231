@@ -1,0 +1,24 @@
+@media screen and (min-width: 600px) {
+    header {
+        display: grid;
+        grid-template-columns: 44px auto 1fr;
+    }
+    header span {
+        text-align: left;
+    }
+    .hamburger {
+        display: none;
+    }
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .navigation li {
+        display: block;
+    }
+    .footerContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+}
