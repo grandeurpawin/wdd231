@@ -1,0 +1,33 @@
+{
+    "family_name": "Pawin",
+    "move_in_date": "2026-01-01",
+    "number_of_people": 5,
+    "visited+_by_bishopric": true,
+    "family_member_data": [
+        {
+            "name": "Alejandro",
+            "gender": "Male",
+            "birthdate": "1967-04-06"
+        },
+        {
+            "name": "Josephine",
+            "gender": "Female",
+            "birthdate": "1970-10-28"
+        },
+        {
+            "name": "Grandeur",
+            "gender": "Male",
+            "birthdate": "2003-02-09"
+        },
+        {
+            "name": "Gerson",
+            "gender": "Male",
+            "birthdate": "2005-11-12"
+        },
+        {
+            "name": "Aljo",
+            "gender": "Male",
+            "birthdate": "2009-10-21"
+        }
+    ]
+}
