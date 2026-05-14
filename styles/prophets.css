@@ -1,0 +1,57 @@
+:root {
+    --background-color: #F5EFE6;
+    --primary-color: #aaa4a4;
+    --secondary-color: #ddd;
+    --heading-font: 'PT Serif', serif;
+    --body-font: 'Lora', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: 1.2rem;
+    text-align: center;
+    color: black;
+}
+
+h1,h2 {
+    font-family: var(--heading-font);
+    margin-top: 1rem;
+}
+
+p {
+    margin: .5rem;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    background-color: var(--background-color);
+    box-shadow: 0 0 25px rgba(75, 58, 58, 0.5);
+    gap: .3rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+section {
+    background-color: var(--primary-color);
+    border: 1px solid #ddd,
+}
+
+img {
+    box-shadow: 0 0 25px rgba(44, 21, 21, 0.5);
+    margin: 0 0 .5rem 0;
+}
+
+footer {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--primary-color);
+}
+
+
