@@ -42,11 +42,14 @@ header img {
 }
 
 /* -----------Navigation----------- */
-.navigation {
+.navigation ul {
     list-style-type: none;
 }
 .navigation li {
     display: none;
+}
+.navigation{
+    display: grid;
 }
 nav a {
     display: block;
@@ -63,7 +66,12 @@ nav a:hover, nav a:active {
     transition:background-color 0.3s ease, color 0.3s ease;
 }
 .show li {
-    display: flex;
+    display: block;
+}
+
+
+.wayFinding {
+    background-color:#ccc3b5
 }
 
 /* -----------Hamburger Button----------- */
@@ -85,7 +93,7 @@ nav a:hover, nav a:active {
 /* -----------Main----------- */
 main {
     background-color: var(--background-color);
-    padding: 2rem 1rem;
+    padding: 1rem;
     margin: 1rem;
     border-radius: 10px;
 }
@@ -134,11 +142,12 @@ h2 {
 }
 #cards.list .courseCard {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
     align-items: center;
     width: 100%;
     min-height: 70px;
-    padding: 0 1rem;
+    padding: 1rem;
+    gap: .5rem;
     background-color: var(--secondary-color);
     border-radius: 6px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
@@ -151,18 +160,12 @@ h2 {
 }
 
 #cards.list .courseCard img,
-#cards.list .courseCard span {
+#cards.list .courseCard span,
+#cards.list .courseCard #companyPhone {
     display: none;
 }
 
-#cards.list .courseCard h2,
-#cards.list .courseCard p,
-#cards.list .courseCard a {
-    margin: 0;
-    padding: 0 0.5rem;
-    white-space: nowrap;
-    overflow: hidden;
-}
+
 
 #cards.list .courseCard a {
     color: var(--primary-color);

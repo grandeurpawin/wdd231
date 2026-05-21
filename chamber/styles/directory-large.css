@@ -9,12 +9,16 @@
     .hamburger {
         display: none;
     }
-    .navigation {
+    .navigation ul{
         display: flex;
         justify-content: flex-end;
     }
     .navigation li {
         display: block;
+    }
+    #cards.list .courseCard {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
     .footerContainer {
         display: grid;

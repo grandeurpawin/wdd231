@@ -1,6 +1,6 @@
 // Header's Button and Navigational Links
 const hamButton = document.querySelector("#hamButton");
-const navigation = document.querySelector(".navigation");
+const navBar = document.querySelector("#navBar");
 // Footer's Year and Last Modification
 const currentYear = document.querySelector("#currentYear");
 const lastModified = document.querySelector("#lastModified");
@@ -15,7 +15,7 @@ const display = document.querySelector("#cards");
 
 hamButton.addEventListener("click", () => {
     hamButton.classList.toggle("show");
-    navigation.classList.toggle("show");
+    navBar.classList.toggle("show");
 });
 
 currentYear.innerHTML = new Date().getFullYear();
@@ -40,6 +40,8 @@ const displayCompanies = (companies) => {
         let company_phone = document.createElement("p");
         let company_website = document.createElement("a");
         let membership_level = document.createElement("p");
+
+        company_phone.id = "companyPhone";
 
         // Images
         portrait.setAttribute("src", company.image_file);
