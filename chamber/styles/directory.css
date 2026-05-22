@@ -235,6 +235,8 @@ footer a {
 .footer {
     padding: 1rem;
     margin: 1rem;
+    width: 100%;
+    word-wrap: break-word;
 }
 #socialLinks {
     text-align: center;
