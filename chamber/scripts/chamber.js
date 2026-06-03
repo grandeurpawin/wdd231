@@ -11,16 +11,22 @@ const cards = document.querySelector("#cards");
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
 const display = document.querySelector("#cards");
+// Weather Information 
+const weatherIcon = document.querySelector("#weatherIcon");
+const weatherInfo = document.querySelector("#weatherInfo");
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=7.062863975872205&lon=125.58749943948169&units=imperial&appid=8f43d38c43b9deadd688e86c587a83aa";
 
-
+// Hamburger Button
 hamButton.addEventListener("click", () => {
     hamButton.classList.toggle("show");
     navBar.classList.toggle("show");
 });
 
+// Date
 currentYear.innerHTML = new Date().getFullYear();
 lastModified.innerHTML = `Last Modification: ${document.lastModified}`;
 
+// Get Company Data
 async function getCompanyData() {
     const response = await fetch(url);
     const data = await response.json()
@@ -86,3 +92,30 @@ listButton.addEventListener("click", () => {
     display.classList.add("list");
     display.classList.remove("grid");
 })
+
+
+async function apiFetch() {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data);
+            displayResults(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+function displayResults(data) {
+    currentTemp.innerHTML = `${data.main.temp}&deg;F`
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    let desc = data.weather[0].description;
+    weatherIcon.setAttribute("src", iconsrc);
+    weatherIcon.setAttribute("alt", desc);
+    captionDesc.textContent = `${desc}`
+}
+
+apiFetch();
