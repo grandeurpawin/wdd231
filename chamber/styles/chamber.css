@@ -90,7 +90,7 @@ nav a:hover, nav a:active {
     content: "\2716";
 }
 
-/* -----------Main----------- */
+/* -----------Directory Page----------- */
 main {
     background-color: var(--background-color);
     padding: 1rem;
@@ -225,6 +225,159 @@ h2 {
     word-break: break-word;
 }
 
+/* -----------Home Page----------- */
+
+/* ---------- Hero Section ---------- */
+.gridSectionContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.gridSectionContainer h2 {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border-radius: 5px 5px 0 0;
+    padding: .5rem;
+}
+
+.heroSection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    text-align: center;
+    color: var(--secondary-color);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+    url("../images/katipunan_nature.webp") center/cover no-repeat;
+    margin-bottom: 1rem;
+}
+
+.heroSection h1 {
+    font-family: var(--heading-font);
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.heroSection p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.heroContentContainer a {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 30px;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.heroContentContainer a:hover {
+    background-color: #5a4444;
+    transform: translateY(-2px);
+}
+
+/* ---------- Weather Section ---------- */
+.currentEvent {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.weatherSection {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#currentWeather {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#weatherInfo p {
+    margin: 0.3rem 0;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.weatherForecastSection {
+    background-color: white;
+}
+
+#weatherForecast {
+    display: grid;
+    align-items: center;
+}
+
+.forecastCard {
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 0.8rem;
+    margin: 0.5rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- Spotlight Section ---------- */
+#spotlightCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.spotlightBusinessCard {
+    background-color: #fff;
+    padding: 1rem;
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.spotlightBusinessCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.spotlightBusinessCard img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.spotlightBusinessCard h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.spotlightBusinessCard span {
+    font-style: italic;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.spotlightBusinessCard p,
+.spotlightBusinessCard a {
+    font-size: 0.95rem;
+    margin: 0.3rem 0;
+    word-break: break-word;
+}
+
 /* -----------Footer----------- */
 footer {
     background-color: var(--background-color);
@@ -238,6 +391,7 @@ footer a {
     width: 100%;
     word-wrap: break-word;
 }
+
 #socialLinks {
     text-align: center;
 }
@@ -248,4 +402,3 @@ footer a {
     padding: .5rem;
     border-radius: 50%;
 }
-

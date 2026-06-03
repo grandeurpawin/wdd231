@@ -20,6 +20,14 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+    .gridSectionContainer {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 1rem;
+    }
+    .gridSectionContainer > :last-child {
+        grid-column: 1/-1;
+    }
     .footerContainer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

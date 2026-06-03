@@ -6,7 +6,7 @@
             "company_phone": "+1-808-555-1122",
             "company_website": "https://www.islandhorizons.com",
             "image_file": "images/island_horizons.svg",
-            "membership_level": 3,
+            "membership_level": "Bronze",
             "other_info": {
                 "description": "Sustainable journeys across Hawaii horizons."
             }
@@ -17,7 +17,7 @@
             "company_phone": "+1-303-555-2233",
             "company_website": "https://www.mountainspirit.com",
             "image_file": "images/mountain_spirit.svg",
-            "membership_level": 2,
+            "membership_level": "Silver",
             "other_info": {
                 "description": "Adventure with purpose, guided by nature."
             }
@@ -28,7 +28,7 @@
             "company_phone": "+1-828-555-3344",
             "company_website": "https://www.riverbendkayak.com",
             "image_file": "images/riverbend_kayak.svg",
-            "membership_level": 1,
+            "membership_level": "Bronze",
             "other_info": {
                 "description": "Flow with the river, paddle with ease."
             }
@@ -39,7 +39,7 @@
             "company_phone": "+1-407-555-4455",
             "company_website": "https://www.safariplains.com",
             "image_file": "images/safari_plains.svg",
-            "membership_level": 3,
+            "membership_level": "Gold",
             "other_info": {
                 "description": "Experience the wild, conserve the future."
             }
@@ -50,9 +50,9 @@
             "company_phone": "+1-206-555-5566",
             "company_website": "https://www.evergreenlodges.com",
             "image_file": "images/evergreen_eco.svg",
-            "membership_level": 2,
+            "membership_level": "Silver",
             "other_info": {
-                "description": "Eco-friendly stays in nature’s embrace."
+                "description": "Eco-friendly stays in nature's embrace."
             }
         },
         {
@@ -61,7 +61,7 @@
             "company_phone": "+1-619-555-6677",
             "company_website": "https://www.coastalbreezecruises.com",
             "image_file": "images/coastal_breeze.svg",
-            "membership_level": 1,
+            "membership_level": "Bronze",
             "other_info": {
                 "description": "Cruise the coast, cherish the ocean."
             }
@@ -72,9 +72,9 @@
             "company_phone": "+1-602-555-7788",
             "company_website": "https://www.desertbloomtours.com",
             "image_file": "images/desert_bloom.svg",
-            "membership_level": 3,
+            "membership_level": "Gold",
             "other_info": {
-                "description": "Discover the desert’s hidden beauty."
+                "description": "Discover the desert's hidden beauty."
             }
         }
     ]
