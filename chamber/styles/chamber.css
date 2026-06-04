@@ -311,6 +311,11 @@ h2 {
     gap: 1rem;
 }
 
+#weatherIcon {
+    width: 75px;
+    height: 75;
+}
+
 #weatherInfo p {
     margin: 0.3rem 0;
     font-size: 1rem;
