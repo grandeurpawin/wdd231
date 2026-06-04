@@ -250,6 +250,7 @@ h2 {
     align-items: center;
     min-height: 60vh;
     text-align: center;
+    background-color: var(--primary-color);
     color: var(--secondary-color);
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
     url("../images/katipunan_nature.webp") center/cover no-repeat;
