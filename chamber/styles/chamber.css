@@ -291,6 +291,10 @@ h2 {
 }
 
 /* ---------- Weather Section ---------- */
+.currentEvent {
+    min-height: 250px;
+}
+
 .currentEvent, .weatherSection, .weatherForecastSection {
     background-color: var(--secondary-color);
     border-radius: 8px;
