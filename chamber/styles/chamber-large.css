@@ -29,7 +29,7 @@
         grid-column: 1/-1;
     }
     .eventPlaceholder {
-        max-width: 800px;
+        max-width: 600px;
     }
     .footerContainer {
         display: grid;
