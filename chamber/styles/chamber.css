@@ -244,7 +244,6 @@ h3 {
     border-radius: 5px 5px 0 0;
     padding: .5rem;
 }
-
 .heroSection {
     position: relative;
     display: flex;
@@ -259,7 +258,6 @@ h3 {
     url("../images/katipunan_nature.webp") center/cover no-repeat;
     margin-bottom: 1rem;
 }
-
 #tagline {
     font-family: var(--heading-font);
     font-weight: bold;
@@ -268,13 +266,15 @@ h3 {
     margin-bottom: 1rem;
     padding: 1rem;
 }
-
+#introText {
+    color: var(--secondary-color);
+    background-color: rgba(0, 0, 0, 0.1);
+}
 .heroSection p {
     font-size: 1.4rem;
     margin-bottom: 2rem;
     padding: 1rem;
 }
-
 .heroContentContainer a {
     display: inline-block;
     background-color: var(--background-color);
@@ -287,7 +287,6 @@ h3 {
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
 .heroContentContainer a:hover {
     background-color: var(--primary-color);
     color: var(--background-color);
@@ -298,7 +297,6 @@ h3 {
 .currentEvent {
     min-height: 250px;
 }
-
 .eventPlaceholder {
     background-color: #fafafa;
     border: 1px solid #ddd;
@@ -309,16 +307,13 @@ h3 {
     text-align: center;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
-
 .eventPlaceholder h3 {
     margin-bottom: 0.75rem;
     font-weight: 600;
 }
-
 .eventPlaceholder p {
     margin: 0.5rem 0;
 }
-
 .currentEvent, .weatherSection, .weatherForecastSection {
     background-color: var(--secondary-color);
     border-radius: 8px;
@@ -327,29 +322,24 @@ h3 {
 #currentWeather, #weatherForecast {
     padding: 1rem;
 }
-
 #currentWeather {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-
 #weatherIcon {
     width: 75px;
     height: 75px;
 }
-
 #weatherInfo p {
     margin: 0.3rem 0;
     font-size: 1rem;
     text-transform: capitalize;
 }
-
 #weatherForecast {
     display: grid;
     align-items: center;
 }
-
 .forecastCard {
     background-color: var(--secondary-color);
     padding: 0.8rem;
@@ -366,7 +356,6 @@ h3 {
     gap: 1.5rem;
     margin: 2rem 0;
 }
-
 .spotlightBusinessCard {
     background-color: var(--secondary-color);
     padding: 1rem;
@@ -376,34 +365,33 @@ h3 {
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 .spotlightBusinessCard:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
-
 .spotlightBusinessCard img {
     width: 200px;
     height: 200px;
     margin-bottom: 1rem;
 }
-
 .spotlightBusinessCard h2 {
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
 }
-
 .spotlightBusinessCard span {
     font-style: italic;
     display: block;
     margin-bottom: 0.8rem;
 }
-
 .spotlightBusinessCard p,
 .spotlightBusinessCard a {
     font-size: 0.95rem;
     margin: 0.3rem 0;
     word-break: break-word;
+}
+.spotlightBusinessCard a {
+    color: var(--primary-color);
+    cursor: pointer;
 }
 
 /* -----------Footer----------- */
