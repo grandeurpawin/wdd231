@@ -4,6 +4,8 @@ const lastModified = document.querySelector("#lastModified");
 const navButton = document.querySelector("#ham-btn");
 const navLinks = document.querySelector("#nav-bar");
 
+const courseDetails = document.querySelector("#courseDetails");
+
 
 currentYear.innerHTML = new Date().getFullYear();
 lastModified.innerHTML = `Last Modification ${document.lastModified}`;
@@ -109,6 +111,11 @@ function displayCourses(courselist) {
         }
 
         card.innerHTML = `<h3>${course.subject} ${course.number}</h3>`
+
+        card.addEventListener("click", () => {
+            displayCourseDetails(course)
+        })
+
         courseContainer.appendChild(card)
     })
     calculateCredits(courselist)
@@ -120,6 +127,25 @@ function calculateCredits(courselist) {
 }
 
 displayCourses(courses)
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = "";
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits: </strong>${course.credits}</p>
+    <p><strong>Description: </strong>${course.description}</p>
+    <p><strong>Certificate: </strong>${course.certificate}</p>
+    <p><strong>Technology: </strong>${course.technology.join(", ")}</p>
+    `;
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector("#closeModal");
+    closeModal.addEventListener("click", () => {
+        courseDetails.close()
+    });
+}
     
 courseButtons.forEach(button => {
     button.addEventListener("click", () => {

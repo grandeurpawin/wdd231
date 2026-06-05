@@ -191,6 +191,45 @@ h3 {
     margin-right: 6px;
 }
 
+/********************Modal********************/
+dialog {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 3rem #777;
+    width: 100%;
+    max-width: 800px;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+    position: absolute;
+    top: 15px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+}
+
+dialog h3 {
+    border: none;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 1.4rem;
+}
+
+dialog p {
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+}
+
 /********************Footer********************/
 footer {
     background-color: var(--primary-color);
