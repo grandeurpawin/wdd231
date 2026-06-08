@@ -1,0 +1,25 @@
+:root {
+    --background-color: #F5EFE6;
+    --primary-color: #3B2F2F;
+    --heading-font: 'PT Serif', serif;
+    --body-font: 'Lora', serif;
+}
+
+main {
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    margin: 0;
+    padding: 20px;
+}
+
+main h2 {
+    font-family: var(--heading-font);
+}
+
+img {
+    display: block;
+    height: auto;
+    width: 400px;
+    padding: 1rem;
+}
