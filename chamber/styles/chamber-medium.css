@@ -10,4 +10,9 @@
     .discoverCard img {
         width: 300px;
     }
+    .discoverCard img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(94, 48, 48, 0.4);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 }
