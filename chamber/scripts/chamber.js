@@ -1,3 +1,5 @@
+import { katipunanSites } from "../data/discover.mjs";
+
 // Header's Button and Navigational Links
 const hamButton = document.querySelector("#hamButton");
 const navBar = document.querySelector("#navBar");
@@ -27,10 +29,74 @@ const weatherForecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat
 // Spotlight cards
 const spotlightCards = document.querySelector("#spotlightCards");
 
+// Discover cards
+const discoverContainer = document.querySelector("#discoverCards");
+if (discoverContainer) {
+    katipunanSites.forEach(site => {
+        const discoverCard = document.createElement('div');
+        discoverCard.classList.add('discoverCard');
+
+        discoverCard.innerHTML = `
+      <figure>
+        <img src="images/${site.image}" alt="${site.name}" loading="lazy" width="300" height="200">
+      </figure>
+      <div class="discoverInfo">
+      <h2>${site.name}</h2>
+      <address>${site.address}</address>
+      <p>${site.description}</p>
+      </div>
+      <button>Learn More</button>
+    `;
+        discoverContainer.appendChild(discoverCard);
+    });
+}
+function initVisitOverlay() {
+    const discoverContainer = document.querySelector("#discoverCards");
+    if (!discoverContainer) return;
+
+    const overlay = document.createElement("div");
+    overlay.id = "visitOverlay";
+    overlay.innerHTML = `
+    <div class="visitMessage">
+      <span id="visitText"></span>
+      <button id="closeOverlay">✖</button>
+    </div>
+  `;
+    document.body.appendChild(overlay);
+
+    const visitText = document.getElementById("visitText");
+    const closeBtn = document.getElementById("closeOverlay");
+
+    const lastVisit = localStorage.getItem("lastVisit");
+    const now = Date.now();
+
+    if (!lastVisit) {
+        visitText.textContent = "Welcome! Let us know if you have any questions.";
+    } else {
+        const diffMs = now - parseInt(lastVisit, 10);
+        const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+        if (diffMs < 1000 * 60 * 60 * 24) {
+            visitText.textContent = "Back so soon! Awesome!";
+        } else if (diffDays === 1) {
+            visitText.textContent = "You last visited 1 day ago.";
+        } else {
+            visitText.textContent = `You last visited ${diffDays} days ago.`;
+        }
+    }
+
+    localStorage.setItem("lastVisit", now.toString());
+
+    closeBtn.addEventListener("click", () => {
+        overlay.style.display = "none";
+    });
+}
+
+document.addEventListener("DOMContentLoaded", initVisitOverlay);
 
 // Current Weather Description
 async function getCurrentWeather() {
-    if (!weatherInfo || !weatherIcon) return; // skip if not on this page
+    if (!weatherInfo || !weatherIcon) return; 
     try {
         const response = await fetch(currentWeatherUrl);
         if (response.ok) {
@@ -63,7 +129,7 @@ function displayCurrentWeather(data) {
 }
 
 async function getWeatherForecast() {
-    if (!weatherForecast) return; // skip if not on this page
+    if (!weatherForecast) return; 
     try {
         const response = await fetch(weatherForecastUrl);
         if (response.ok) {
@@ -214,7 +280,6 @@ const displaySpotlightCards = (companies) => {
     });
 };
 
-// Grid/List toggle only if buttons exist
 if (gridButton && listButton && display) {
     gridButton.addEventListener("click", () => {
         display.classList.add("grid");
